@@ -280,83 +280,45 @@ footer {
     text-transform: uppercase; }
 
 /* line 262, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
-.about h2 {
-  font-family: "Raleway";
-  font-weight: 200;
-  color: black;
-  text-transform: uppercase; }
-/* line 267, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
-.about li {
-  list-style: none; }
-/* line 269, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
-.about p, .about li {
-  font-family: "Raleway";
-  font-weight: 200;
-  font-size: 14px;
-  color: black; }
-/* line 274, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
-.about h3 {
-  font-family: "Raleway";
-  font-weight: 500;
-  color: grey; }
-  /* line 278, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
-  .about h3 a {
-    color: black;
-    text-decoration: none; }
-  /* line 281, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
-  .about h3 span {
-    color: black;
-    font-weight: 400;
-    font-size: 14px; }
-/* line 286, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
-.about ul.skills {
-  text-align: center;
-  width: 100%; }
-  /* line 289, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
-  .about ul.skills li {
-    display: inline;
-    margin-right: 30px; }
-    /* line 292, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
-    .about ul.skills li img {
-      width: 7%;
-      max-height: 10%; }
+.intro {
+  margin: 20px inherit; }
 
-/* line 301, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+/* line 268, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
 .quitstik_project header {
   margin: 0 -30px;
   padding: 0 20px 20px; }
-/* line 306, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+/* line 273, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
 .quitstik_project img {
   width: 80%;
   margin: 0 auto; }
-/* line 310, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+/* line 277, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
 .quitstik_project .project-header-image img {
   margin-top: -200px;
   width: 120%;
   margin-left: -10%; }
-/* line 314, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+/* line 281, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
 .quitstik_project .project-body {
   margin-top: -170px;
   position: relative; }
-/* line 317, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+/* line 284, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
 .quitstik_project h1 {
   font-family: "Fredoka One"; }
-/* line 319, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+/* line 286, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
 .quitstik_project h4 {
   font-family: "Raleway";
   font-weight: 300;
   margin: -24px 0 0 0; }
-/* line 323, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+/* line 290, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
 .quitstik_project p {
   font-family: "Raleway";
   text-align: justify; }
 
-/* line 331, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+/* line 298, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
 #mePic {
   padding: 0;
   overflow: hidden;
   max-height: 250px; }
 
-/* line 335, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+/* line 302, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
 input, textarea {
   margin-bottom: 10px; }
