@@ -1,13 +1,20 @@
 @charset "UTF-8";
 @import url(http://fonts.googleapis.com/css?family=Montserrat);
 /* line 7, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+html, body, .container {
+  height: 100%;
+  width: 100%;
+  min-height: 400px;
+  overflow: hidden; }
+
+/* line 15, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
 body {
   background-image: linear-gradient(180deg, #00d39b, #4cb9c5);
   background-repeat: no-repeat;
   padding: 5px 5px 80px 5px;
   transition: padding 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55); }
 
-/* line 14, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+/* line 24, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
 hr {
   clear: both;
   float: none;
@@ -18,43 +25,42 @@ hr {
   background: #ddd;
   background-image: -moz-linear-gradient(left center, white 0%, #dddddd 10%, #dddddd 90%, white 100%); }
 
-/* line 25, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+/* line 35, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
 .container {
   background: #ffffff;
-  width: 100%;
   padding: 0; }
-  /* line 29, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+  /* line 38, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
   .container .centered-text {
     text-align: center; }
-  /* line 31, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+  /* line 40, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
   .container .body-row {
     width: 100%;
     display: inline-block; }
-  /* line 34, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+  /* line 43, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
   .container .body-full {
     width: 100%; }
-  /* line 36, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+  /* line 45, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
   .container .body-50pc {
     width: 50%;
     float: left; }
-  /* line 39, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+  /* line 48, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
   .container .body-33pc {
     width: 33.3%;
     float: left; }
-  /* line 42, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+  /* line 51, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
   .container .body-25pc {
     width: 25%;
     float: left; }
-  /* line 45, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+  /* line 54, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
   .container .body-75pc {
     width: 75%;
     float: left; }
   @media screen and (max-width: 768px) {
-    /* line 49, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+    /* line 58, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
     .container .body-75pc, .container .body-25pc, .container .body-33pc, .container .body-50pc {
       width: 100%; } }
 
-/* line 59, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+/* line 68, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
 .nav-burger {
   top: 25px;
   z-index: 2;
@@ -64,7 +70,7 @@ hr {
   padding: 8px 0;
   cursor: pointer;
   position: relative; }
-  /* line 68, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+  /* line 77, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
   .nav-burger span {
     height: 4px;
     display: block;
@@ -74,7 +80,7 @@ hr {
     white-space: nowrap;
     width: 25px;
     transition: background 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55); }
-  /* line 77, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+  /* line 86, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
   .nav-burger::before, .nav-burger::after {
     left: 0;
     content: "";
@@ -84,69 +90,69 @@ hr {
     position: absolute;
     transform-origin: center center;
     transition: width 0.2s ease-in-out, background 0.2s ease-in-out, transform 0.2s ease-in-out, top 0.2s ease-in-out, bottom 0.2s ease-in-out, left 0.2s ease-in-out, right 0.2s ease-in-out; }
-  /* line 87, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+  /* line 96, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
   .nav-burger::before {
     top: 0; }
-  /* line 89, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+  /* line 98, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
   .nav-burger::after {
     bottom: 0; }
-  /* line 92, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+  /* line 101, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
   .nav-burger.menu-open span {
     background: rgba(0, 211, 155, 0); }
-  /* line 94, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+  /* line 103, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
   .nav-burger.menu-open::before {
     top: 8px;
     transform: rotate(-45deg); }
-  /* line 97, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+  /* line 106, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
   .nav-burger.menu-open::after {
     bottom: 8px;
     transform: rotate(45deg); }
-  /* line 100, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+  /* line 109, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
   .nav-burger.menu-open::before, .nav-burger.menu-open::after {
     width: 26px;
     background: #00d39b; }
-  /* line 107, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+  /* line 116, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
   .nav-burger.menu-open:hover span, .nav-burger.menu-open:focus span, .nav-burger.menu-open:active span {
     background: rgba(0, 211, 155, 0); }
-  /* line 109, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+  /* line 118, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
   .nav-burger.menu-open:hover::before, .nav-burger.menu-open:focus::before, .nav-burger.menu-open:active::before {
     top: 8px;
     left: -3px;
     transform: rotate(-45deg); }
-  /* line 113, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+  /* line 122, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
   .nav-burger.menu-open:hover::after, .nav-burger.menu-open:focus::after, .nav-burger.menu-open:active::after {
     left: 9px;
     bottom: 8px;
     transform: rotate(45deg); }
-  /* line 117, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+  /* line 126, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
   .nav-burger.menu-open:hover::before, .nav-burger.menu-open:hover::after, .nav-burger.menu-open:focus::before, .nav-burger.menu-open:focus::after, .nav-burger.menu-open:active::before, .nav-burger.menu-open:active::after {
     width: 18px; }
-  /* line 122, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+  /* line 131, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
   .nav-burger:hover span, .nav-burger:focus span, .nav-burger:active span {
     background: rgba(255, 255, 255, 0); }
-  /* line 124, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+  /* line 133, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
   .nav-burger:hover::before, .nav-burger:focus::before, .nav-burger:active::before {
     top: 8px;
     left: -3px;
     transform: rotate(45deg); }
-  /* line 128, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+  /* line 137, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
   .nav-burger:hover::after, .nav-burger:focus::after, .nav-burger:active::after {
     left: 9px;
     bottom: 8px;
     transform: rotate(-45deg); }
-  /* line 132, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+  /* line 141, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
   .nav-burger:hover::before, .nav-burger:hover::after, .nav-burger:focus::before, .nav-burger:focus::after, .nav-burger:active::before, .nav-burger:active::after {
     width: 18px; }
 
-/* line 135, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+/* line 144, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
 .is-active-menu {
   padding: 135px 5px 80px 5px; }
 
-/* line 142, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+/* line 151, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
 .icon-ion-plus:before {
   content: ""; }
 
-/* line 145, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+/* line 154, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
 .expand-text .icon {
   display: inline-block;
   margin-bottom: 10px;
@@ -154,36 +160,36 @@ hr {
   transition: 0.3s;
   -webkit-backface-visibility: hidden; }
 
-/* line 152, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+/* line 161, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
 .expand-text .icon.rotate {
   -webkit-transform: rotate(135deg);
   -ms-transform: rotate(135deg);
   transform: rotate(135deg); }
 
-/* line 157, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+/* line 166, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
 .description-small {
   display: inline-block;
   background: #f3f3f3;
   padding: 20px 0;
   margin-bottom: 10px; }
-  /* line 162, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+  /* line 171, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
   .description-small .container {
     background: none; }
-  /* line 164, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+  /* line 173, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
   .description-small h1 {
     font-size: 27px; }
 
-/* line 167, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+/* line 176, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
 .work-intro {
   margin-bottom: 10px;
   font-size: 18px;
   line-height: 1.4; }
 
-/* line 172, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+/* line 181, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
 .expand-text {
   cursor: pointer; }
 
-/* line 175, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+/* line 184, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
 .expand-text .icon {
   display: inline-block;
   margin-bottom: 10px;
@@ -191,20 +197,29 @@ hr {
   transition: 0.3s;
   -webkit-backface-visibility: hidden; }
 
-/* line 182, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+/* line 191, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
 .expandable-text {
   display: none;
   margin-bottom: 20px; }
 
-/* line 186, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+/* line 195, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
 .projectPic {
   margin-top: 15px; }
 
-/* line 192, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+/* line 201, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+a {
+  color: #00d39b; }
+
+/* line 203, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+a:hover {
+  color: #4cb9c5;
+  text-decoration: none; }
+
+/* line 207, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
 header {
   height: 80px;
   background: #ffffff; }
-  /* line 195, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+  /* line 210, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
   header h1 {
     font-family: "Montserrat";
     color: #424242;
@@ -212,7 +227,7 @@ header {
     margin-top: 28px;
     padding-left: 0 !important; }
 
-/* line 201, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+/* line 216, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
 .mainNav {
   position: fixed;
   top: 0;
@@ -222,31 +237,31 @@ header {
   padding: 10px;
   transform: translateY(-130px);
   transition: transform 0.3s ease; }
-  /* line 210, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+  /* line 225, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
   .mainNav ul {
     text-align: center;
     list-style: none;
     line-height: 2;
     padding: 0; }
-    /* line 215, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+    /* line 230, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
     .mainNav ul a {
       font-family: "Montserrat";
       color: #ffffff;
       font-size: 12px; }
 
-/* line 219, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+/* line 234, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
 .active {
   transform: translateY(0px); }
 
-/* line 221, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+/* line 236, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
 img {
   max-width: 100%;
   height: auto; }
 
-/* line 225, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+/* line 240, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
 footer {
   height: 80px; }
-  /* line 227, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+  /* line 242, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
   footer img {
     display: block;
     margin-left: auto;
@@ -255,70 +270,86 @@ footer {
     max-width: 100%;
     width: auto; }
 
-/* line 238, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+/* line 253, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
 .work .project-image {
   height: 100px;
   overflow: hidden;
   transition: height 0.3s;
   transition: margin-top 0.3s; }
-/* line 246, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+/* line 261, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
 .work .quitstik-project img {
   transition: margin-top 0.3s;
   margin-top: -37%; }
-/* line 250, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+/* line 265, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
 .work .mixtable-project img {
   margin-top: -6.5%; }
 
-/* line 253, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+/* line 268, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
 .index .welcome {
   max-width: 100%;
   margin: 40px auto; }
-  /* line 256, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+  /* line 271, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
   .index .welcome h1 {
     text-align: justify;
     font-family: "Raleway";
     text-transform: uppercase; }
 
-/* line 262, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+/* line 277, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
 .intro {
   margin: 20px inherit; }
 
-/* line 268, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+/* line 283, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
 .quitstik_project header {
   margin: 0 -30px;
   padding: 0 20px 20px; }
-/* line 273, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+/* line 288, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
 .quitstik_project img {
   width: 80%;
   margin: 0 auto; }
-/* line 277, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+/* line 292, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
 .quitstik_project .project-header-image img {
   margin-top: -200px;
   width: 120%;
   margin-left: -10%; }
-/* line 281, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+/* line 296, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
 .quitstik_project .project-body {
   margin-top: -170px;
   position: relative; }
-/* line 284, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+/* line 299, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
 .quitstik_project h1 {
   font-family: "Fredoka One"; }
-/* line 286, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+/* line 301, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
 .quitstik_project h4 {
   font-family: "Raleway";
   font-weight: 300;
   margin: -24px 0 0 0; }
-/* line 290, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+/* line 305, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
 .quitstik_project p {
   font-family: "Raleway";
   text-align: justify; }
 
-/* line 298, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+/* line 313, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
 #mePic {
   padding: 0;
   overflow: hidden;
   max-height: 250px; }
 
-/* line 302, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+/* line 317, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
 input, textarea {
   margin-bottom: 10px; }
+
+/* line 324, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+.sorry {
+  text-align: center;
+  padding-top: 150px; }
+
+/* line 328, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+.stickyFoot {
+  bottom: 78px;
+  position: fixed;
+  width: 98%; }
+
+@media (max-width: 400px) {
+  /* line 334, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+  h1 {
+    font-size: 30px; } }
