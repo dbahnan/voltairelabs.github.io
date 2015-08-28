@@ -1,18 +1,22 @@
-@charset "UTF-8";
-@import url(http://fonts.googleapis.com/css?family=Montserrat);
+@import url(https://fonts.googleapis.com/css?family=Karla:400,700|Cabin:600);
 /* line 7, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
-html, body, .container {
-  height: 100%;
-  width: 100%;
-  min-height: 400px;
-  overflow: hidden; }
+html, head, body {
+  min-height: 100%; }
 
-/* line 15, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+/* line 11, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
 body {
   background-image: linear-gradient(180deg, #00d39b, #4cb9c5);
   background-repeat: no-repeat;
-  padding: 5px 5px 5px 5px;
+  padding: 5px;
   transition: padding 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55); }
+  @media (min-width: 992px) {
+    /* line 11, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+    body {
+      padding: 10px; } }
+
+/* line 19, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+.background {
+  background-color: white; }
 
 /* line 24, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
 hr {
@@ -28,131 +32,43 @@ hr {
 /* line 35, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
 .container {
   background: #ffffff;
-  padding: 0; }
-  /* line 40, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+  padding-bottom: 5%; }
+  /* line 42, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
   .container .centered-text {
     text-align: center; }
-  /* line 42, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+  /* line 44, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
   .container .body-row {
     width: 100%;
     display: inline-block; }
-  /* line 45, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+  /* line 47, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
   .container .body-full {
     width: 100%; }
-  /* line 47, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+  /* line 49, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
   .container .body-50pc {
     width: 50%;
     float: left; }
-  /* line 50, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+  /* line 52, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
   .container .body-33pc {
     width: 33.3%;
     float: left; }
-  /* line 53, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+  /* line 55, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
   .container .body-25pc {
     width: 25%;
     float: left; }
-  /* line 56, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+  /* line 58, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
   .container .body-75pc {
     width: 75%;
     float: left; }
   @media screen and (max-width: 768px) {
-    /* line 60, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+    /* line 62, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
     .container .body-75pc, .container .body-25pc, .container .body-33pc, .container .body-50pc {
       width: 100%; } }
 
 /* line 70, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
-.nav-burger {
-  top: 25px;
-  z-index: 2;
-  right: 12px;
-  width: 25px;
-  height: 20px;
-  padding: 8px 0;
-  cursor: pointer;
-  position: relative; }
-  /* line 79, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
-  .nav-burger span {
-    height: 4px;
-    display: block;
-    overflow: hidden;
-    text-indent: 100%;
-    background: #00d39b;
-    white-space: nowrap;
-    width: 25px;
-    transition: background 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55); }
-  /* line 88, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
-  .nav-burger::before, .nav-burger::after {
-    left: 0;
-    content: "";
-    width: 25px;
-    height: 4px;
-    background: #00d39b;
-    position: absolute;
-    transform-origin: center center;
-    transition: width 0.2s ease-in-out, background 0.2s ease-in-out, transform 0.2s ease-in-out, top 0.2s ease-in-out, bottom 0.2s ease-in-out, left 0.2s ease-in-out, right 0.2s ease-in-out; }
-  /* line 98, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
-  .nav-burger::before {
-    top: 0; }
-  /* line 100, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
-  .nav-burger::after {
-    bottom: 0; }
-  /* line 103, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
-  .nav-burger.menu-open span {
-    background: rgba(0, 211, 155, 0); }
-  /* line 105, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
-  .nav-burger.menu-open::before {
-    top: 8px;
-    transform: rotate(-45deg); }
-  /* line 108, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
-  .nav-burger.menu-open::after {
-    bottom: 8px;
-    transform: rotate(45deg); }
-  /* line 111, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
-  .nav-burger.menu-open::before, .nav-burger.menu-open::after {
-    width: 26px;
-    background: #00d39b; }
-  /* line 118, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
-  .nav-burger.menu-open:hover span, .nav-burger.menu-open:focus span, .nav-burger.menu-open:active span {
-    background: rgba(0, 211, 155, 0); }
-  /* line 120, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
-  .nav-burger.menu-open:hover::before, .nav-burger.menu-open:focus::before, .nav-burger.menu-open:active::before {
-    top: 8px;
-    left: -3px;
-    transform: rotate(-45deg); }
-  /* line 124, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
-  .nav-burger.menu-open:hover::after, .nav-burger.menu-open:focus::after, .nav-burger.menu-open:active::after {
-    left: 9px;
-    bottom: 8px;
-    transform: rotate(45deg); }
-  /* line 128, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
-  .nav-burger.menu-open:hover::before, .nav-burger.menu-open:hover::after, .nav-burger.menu-open:focus::before, .nav-burger.menu-open:focus::after, .nav-burger.menu-open:active::before, .nav-burger.menu-open:active::after {
-    width: 18px; }
-  /* line 133, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
-  .nav-burger:hover span, .nav-burger:focus span, .nav-burger:active span {
-    background: rgba(255, 255, 255, 0); }
-  /* line 135, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
-  .nav-burger:hover::before, .nav-burger:focus::before, .nav-burger:active::before {
-    top: 8px;
-    left: -3px;
-    transform: rotate(45deg); }
-  /* line 139, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
-  .nav-burger:hover::after, .nav-burger:focus::after, .nav-burger:active::after {
-    left: 9px;
-    bottom: 8px;
-    transform: rotate(-45deg); }
-  /* line 143, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
-  .nav-burger:hover::before, .nav-burger:hover::after, .nav-burger:focus::before, .nav-burger:focus::after, .nav-burger:active::before, .nav-burger:active::after {
-    width: 18px; }
-
-/* line 146, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
-.is-active-menu {
-  padding: 135px 5px 80px 5px; }
-
-/* line 153, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
 .icon-ion-plus:before {
-  content: ""; }
+  content: "+"; }
 
-/* line 156, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+/* line 73, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
 .expand-text .icon {
   display: inline-block;
   margin-bottom: 10px;
@@ -160,36 +76,34 @@ hr {
   transition: 0.3s;
   -webkit-backface-visibility: hidden; }
 
-/* line 163, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+/* line 80, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
 .expand-text .icon.rotate {
   -webkit-transform: rotate(135deg);
   -ms-transform: rotate(135deg);
   transform: rotate(135deg); }
 
-/* line 168, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+/* line 85, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
 .description-small {
   display: inline-block;
-  background: #f3f3f3;
   padding: 20px 0;
   margin-bottom: 10px; }
-  /* line 173, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+  /* line 89, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
   .description-small .container {
     background: none; }
-  /* line 175, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+  /* line 91, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
   .description-small h1 {
     font-size: 27px; }
 
-/* line 178, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+/* line 94, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
 .work-intro {
   margin-bottom: 10px;
-  font-size: 18px;
-  line-height: 1.4; }
+  margin-top: 20px; }
 
-/* line 183, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+/* line 98, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
 .expand-text {
   cursor: pointer; }
 
-/* line 186, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+/* line 101, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
 .expand-text .icon {
   display: inline-block;
   margin-bottom: 10px;
@@ -197,161 +111,784 @@ hr {
   transition: 0.3s;
   -webkit-backface-visibility: hidden; }
 
-/* line 193, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+/* line 108, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
 .expandable-text {
   display: none;
   margin-bottom: 20px; }
 
-/* line 197, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+/* line 112, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
 .projectPic {
   margin-top: 15px; }
 
-/* line 203, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+/* line 121, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Cabin", sans-serif; }
+
+/* line 124, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+p {
+  font-family: "Karla", sans-serif;
+  font-size: 16px;
+  font-weight: 400; }
+
+/* line 129, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+.lead {
+  font-size: 20px; }
+
+/* line 134, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+.navTainer {
+  margin: auto;
+  width: auto; }
+
+@media (min-width: 768px) {
+  /* line 139, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+  .navTainer {
+    width: 750px; } }
+@media (min-width: 992px) {
+  /* line 143, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+  .navTainer {
+    width: 970px; } }
+@media (min-width: 1200px) {
+  /* line 147, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+  .navTainer {
+    width: 1170px; } }
+/* line 151, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+.col-ms-1, .col-ms-10, .col-ms-11, .col-ms-12, .col-ms-2, .col-ms-3, .col-ms-4, .col-ms-5, .col-ms-6, .col-ms-7, .col-ms-8, .col-ms-9 {
+  position: relative;
+  min-height: 1px;
+  padding-right: 5px;
+  padding-left: 5px; }
+
+@media (min-width: 480px) and (max-width: 767px) {
+  /* line 158, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+  .container {
+    max-width: 748px; }
+
+  /* line 160, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+  .hidden-xs {
+    display: block !important; }
+
+  /* line 162, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+  .col-ms-1, .col-ms-10, .col-ms-11, .col-ms-12, .col-ms-2, .col-ms-3, .col-ms-4, .col-ms-5, .col-ms-6, .col-ms-7, .col-ms-8, .col-ms-9 {
+    float: left; }
+
+  /* line 164, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+  .col-ms-12 {
+    width: 100%; }
+
+  /* line 166, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+  .col-ms-11 {
+    width: 91.66667%; }
+
+  /* line 168, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+  .col-ms-10 {
+    width: 83.33333%; }
+
+  /* line 170, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+  .col-ms-9 {
+    width: 75%; }
+
+  /* line 172, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+  .col-ms-8 {
+    width: 66.66667%; }
+
+  /* line 174, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+  .col-ms-7 {
+    width: 58.33333%; }
+
+  /* line 176, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+  .col-ms-6 {
+    width: 50%; }
+
+  /* line 178, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+  .col-ms-5 {
+    width: 41.66667%; }
+
+  /* line 180, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+  .col-ms-4 {
+    width: 33.33333%; }
+
+  /* line 182, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+  .col-ms-3 {
+    width: 25%; }
+
+  /* line 184, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+  .col-ms-2 {
+    width: 16.66667%; }
+
+  /* line 186, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+  .col-ms-1 {
+    width: 8.33333%; }
+
+  /* line 188, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+  .col-ms-pull-12 {
+    right: 100%; }
+
+  /* line 190, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+  .col-ms-pull-11 {
+    right: 91.66667%; }
+
+  /* line 192, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+  .col-ms-pull-10 {
+    right: 83.33333%; }
+
+  /* line 194, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+  .col-ms-pull-9 {
+    right: 75%; }
+
+  /* line 196, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+  .col-ms-pull-8 {
+    right: 66.66667%; }
+
+  /* line 198, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+  .col-ms-pull-7 {
+    right: 58.33333%; }
+
+  /* line 200, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+  .col-ms-pull-6 {
+    right: 50%; }
+
+  /* line 202, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+  .col-ms-pull-5 {
+    right: 41.66667%; }
+
+  /* line 204, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+  .col-ms-pull-4 {
+    right: 33.33333%; }
+
+  /* line 206, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+  .col-ms-pull-3 {
+    right: 25%; }
+
+  /* line 208, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+  .col-ms-pull-2 {
+    right: 16.66667%; }
+
+  /* line 210, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+  .col-ms-pull-1 {
+    right: 8.33333%; }
+
+  /* line 212, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+  .col-ms-pull-0 {
+    right: auto; }
+
+  /* line 214, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+  .col-ms-push-12 {
+    left: 100%; }
+
+  /* line 216, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+  .col-ms-push-11 {
+    left: 91.66667%; }
+
+  /* line 218, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+  .col-ms-push-10 {
+    left: 83.33333%; }
+
+  /* line 220, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+  .col-ms-push-9 {
+    left: 75%; }
+
+  /* line 222, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+  .col-ms-push-8 {
+    left: 66.66667%; }
+
+  /* line 224, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+  .col-ms-push-7 {
+    left: 58.33333%; }
+
+  /* line 226, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+  .col-ms-push-6 {
+    left: 50%; }
+
+  /* line 228, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+  .col-ms-push-5 {
+    left: 41.66667%; }
+
+  /* line 230, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+  .col-ms-push-4 {
+    left: 33.33333%; }
+
+  /* line 232, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+  .col-ms-push-3 {
+    left: 25%; }
+
+  /* line 234, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+  .col-ms-push-2 {
+    left: 16.66667%; }
+
+  /* line 236, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+  .col-ms-push-1 {
+    left: 8.33333%; }
+
+  /* line 238, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+  .col-ms-push-0 {
+    left: auto; }
+
+  /* line 240, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+  .col-ms-offset-12 {
+    margin-left: 100%; }
+
+  /* line 242, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+  .col-ms-offset-11 {
+    margin-left: 91.66667%; }
+
+  /* line 244, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+  .col-ms-offset-10 {
+    margin-left: 83.33333%; }
+
+  /* line 246, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+  .col-ms-offset-9 {
+    margin-left: 75%; }
+
+  /* line 248, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+  .col-ms-offset-8 {
+    margin-left: 66.66667%; }
+
+  /* line 250, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+  .col-ms-offset-7 {
+    margin-left: 58.33333%; }
+
+  /* line 252, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+  .col-ms-offset-6 {
+    margin-left: 50%; }
+
+  /* line 254, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+  .col-ms-offset-5 {
+    margin-left: 41.66667%; }
+
+  /* line 256, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+  .col-ms-offset-4 {
+    margin-left: 33.33333%; }
+
+  /* line 258, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+  .col-ms-offset-3 {
+    margin-left: 25%; }
+
+  /* line 260, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+  .col-ms-offset-2 {
+    margin-left: 16.66667%; }
+
+  /* line 262, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+  .col-ms-offset-1 {
+    margin-left: 8.33333%; }
+
+  /* line 264, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+  .col-ms-offset-0 {
+    margin-left: 0; } }
+/* line 267, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+.visible-ms, .visible-xs, .visible-ms-block, .visible-ms-inline, .visible-ms-inline-block, .visible-xs-block, .visible-xs-inline, .visible-xs-inline-block {
+  display: none !important; }
+
+@media (max-width: 479px) {
+  /* line 271, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+  .visible-xs {
+    display: block !important; }
+
+  /* line 273, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+  table.visible-xs {
+    display: table; }
+
+  /* line 275, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+  tr.visible-xs {
+    display: table-row !important; }
+
+  /* line 277, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+  td.visible-xs, th.visible-xs {
+    display: table-cell !important; }
+
+  /* line 279, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+  .visible-xs-block {
+    display: block !important; }
+
+  /* line 281, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+  .visible-xs-inline {
+    display: inline !important; }
+
+  /* line 283, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+  .visible-xs-inline-block {
+    display: inline-block !important; } }
+@media (min-width: 480px) and (max-width: 767px) {
+  /* line 287, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+  .visible-ms {
+    display: block !important; }
+
+  /* line 289, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+  table.visible-ms {
+    display: table; }
+
+  /* line 291, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+  tr.visible-ms {
+    display: table-row !important; }
+
+  /* line 293, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+  td.visible-ms, th.visible-ms {
+    display: table-cell !important; }
+
+  /* line 295, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+  .visible-ms-block {
+    display: block !important; }
+
+  /* line 297, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+  .visible-ms-inline {
+    display: inline !important; }
+
+  /* line 299, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+  .visible-ms-inline-block {
+    display: inline-block !important; } }
+/* line 304, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
 a {
   color: #00d39b; }
 
-/* line 205, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+/* line 306, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
 a:hover {
   color: #4cb9c5;
   text-decoration: none; }
 
-/* line 209, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
-header {
-  height: 80px;
-  background: #ffffff; }
-  /* line 212, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
-  header h1 {
-    font-family: "Montserrat";
-    color: #424242;
-    font-size: 18px;
-    margin-top: 28px;
-    padding-left: 0 !important; }
+/* line 312, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+.navbar-brand {
+  color: #424242 !important;
+  padding-left: 0 !important;
+  font-family: "Cabin";
+  margin: 0;
+  font-size: 21px; }
 
-/* line 218, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
-.mainNav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 130px;
-  width: 100%;
-  padding: 10px;
-  transform: translateY(-130px);
-  transition: transform 0.3s ease; }
-  /* line 227, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
-  .mainNav ul {
+/* line 319, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+#bs-example-navbar-collapse-1 {
+  position: relative;
+  z-index: 3; }
+
+@media (min-width: 768px) {
+  /* line 324, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+  #bs-example-navbar-collapse-1 {
+    float: right; }
+
+  /* line 326, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+  .navbar-header {
+    width: 100%; }
+
+  /* line 328, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+  .container-fluid {
+    display: flex; }
+
+  /* line 330, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+  .navbar-nav {
+    margin-top: 21px; }
+
+  /* line 333, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+  ul a {
+    font-family: "Karla";
+    font-weight: 400;
+    font-size: 16px;
+    -webkit-transition: color 0.15s ease-in;
+    -moz-transition: color 0.15s ease-in;
+    -o-transition: color 0.15s ease-in;
+    -ms-transition: color 0.15s ease-in;
+    transition: color 0.15s ease-in; }
+    /* line 342, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+    ul a:hover, ul a:focus {
+      background-color: transparent !important; } }
+/* line 345, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+.navbar-default {
+  background-color: transparent;
+  border-color: transparent;
+  margin-top: 20px; }
+
+@media (max-width: 768px) {
+  /* line 354, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+  .navbar-nav {
+    margin-top: 0px; }
+
+  /* line 356, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+  ul {
     text-align: center;
     list-style: none;
     line-height: 2;
     padding: 0; }
-    /* line 232, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
-    .mainNav ul a {
-      font-family: "Montserrat";
+    /* line 361, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+    ul a {
+      font-family: "Karla";
       color: #ffffff;
-      font-size: 12px; }
+      font-size: 14px;
+      padding: 5px !important;
+      -webkit-transition: color 0.15s ease-in;
+      -moz-transition: color 0.15s ease-in;
+      -o-transition: color 0.15s ease-in;
+      -ms-transition: color 0.15s ease-in;
+      transition: color 0.15s ease-in;
+      line-height: 32px !important; }
+      /* line 372, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+      ul a:hover, ul a:focus {
+        background-color: transparent !important;
+        color: #424242 !important; } }
+/* line 380, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+.c-hamburger {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  width: 25px;
+  height: 50px;
+  font-size: 0;
+  text-indent: -9999px;
+  appearance: none;
+  box-shadow: none;
+  border-radius: none;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s; }
+  /* line 396, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+  .c-hamburger:focus, .c-hamburger:hover {
+    outline: none;
+    background-color: transparent !important; }
 
-/* line 236, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
-.active {
-  transform: translateY(0px); }
+@media (min-width: 768px) {
+  /* line 401, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+  .c-hamburger {
+    display: none; } }
+/* line 404, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+.c-hamburger span {
+  display: block;
+  position: absolute;
+  top: 24px;
+  left: 0px;
+  right: 0px;
+  height: 4px;
+  background: #00d39b; }
+  /* line 412, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+  .c-hamburger span::before, .c-hamburger span::after {
+    position: absolute;
+    display: block;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: #00d39b;
+    content: ""; }
+  /* line 420, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+  .c-hamburger span::before {
+    top: -8px; }
+  /* line 422, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+  .c-hamburger span::after {
+    bottom: -8px; }
 
-/* line 238, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+/* line 426, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+.c-hamburger--htx span {
+  transition: background 0s 0.3s; }
+  /* line 428, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+  .c-hamburger--htx span::before, .c-hamburger--htx span::after {
+    transition-duration: 0.3s, 0.3s;
+    transition-delay: 0.3s, 0s; }
+  /* line 431, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+  .c-hamburger--htx span::before {
+    transition-property: top, transform; }
+  /* line 433, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+  .c-hamburger--htx span::after {
+    transition-property: bottom, transform; }
+/* line 436, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+.c-hamburger--htx.is-active span {
+  background: none; }
+  /* line 438, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+  .c-hamburger--htx.is-active span::before {
+    top: 0;
+    transform: rotate(45deg); }
+  /* line 441, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+  .c-hamburger--htx.is-active span::after {
+    bottom: 0;
+    transform: rotate(-45deg); }
+  /* line 444, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+  .c-hamburger--htx.is-active span::before, .c-hamburger--htx.is-active span::after {
+    transition-delay: 0s, 0.3s; }
+
+/* line 457, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
 img {
-  max-width: 100%;
+  width: 100%;
   height: auto; }
 
-/* line 242, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+/* line 461, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
 footer {
-  height: 80px; }
-  /* line 244, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+  height: 70px; }
+  /* line 463, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
   footer img {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    transform: translateY(75px);
     max-width: 100%;
     width: auto; }
 
-/* line 255, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
-.work .project-image {
-  height: 100px;
-  overflow: hidden;
-  transition: height 0.3s;
-  transition: margin-top 0.3s; }
-/* line 263, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
-.work .quitstik-project img {
-  transition: margin-top 0.3s;
-  margin-top: -37%; }
-/* line 267, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
-.work .mixtable-project img {
-  margin-top: -6.5%; }
-
-/* line 270, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
-.index .welcome {
-  max-width: 100%;
-  margin: 40px auto; }
-  /* line 273, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
-  .index .welcome h1 {
-    text-align: justify;
-    font-family: "Raleway";
-    text-transform: uppercase; }
-
-/* line 279, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
-.intro {
-  margin: 20px inherit; }
-
-/* line 285, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
-.quitstik_project header {
-  margin: 0 -30px;
-  padding: 0 20px 20px; }
-/* line 290, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
-.quitstik_project img {
-  width: 80%;
-  margin: 0 auto; }
-/* line 294, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
-.quitstik_project .project-header-image img {
-  margin-top: -200px;
-  width: 120%;
-  margin-left: -10%; }
-/* line 298, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
-.quitstik_project .project-body {
-  margin-top: -170px;
+/* line 475, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+.imageSquare {
+  display: inline-block;
   position: relative; }
-/* line 301, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
-.quitstik_project h1 {
-  font-family: "Fredoka One"; }
-/* line 303, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
-.quitstik_project h4 {
-  font-family: "Raleway";
-  font-weight: 300;
-  margin: -24px 0 0 0; }
-/* line 307, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
-.quitstik_project p {
-  font-family: "Raleway";
-  text-align: justify; }
 
-/* line 315, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
-#mePic {
-  padding: 0;
-  overflow: hidden;
-  max-height: 250px; }
+/* line 479, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+#panel-image-1 {
+  position: relative;
+  background: url("/images/projects/1.WrongSideOfTheStuds/1.jpg") no-repeat;
+  background-size: cover;
+  background-position: center; }
 
-/* line 319, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
-input, textarea {
+/* line 485, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+#panel-image-2 {
+  position: relative;
+  background: url("/images/projects/2.TheUnit/1.jpg") no-repeat;
+  background-size: cover;
+  background-position: center; }
+
+/* line 491, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+#panel-image-3 {
+  position: relative;
+  background: url("/images/projects/3.SoupDragonShop/1.jpg") no-repeat;
+  background-size: cover;
+  background-position: center; }
+
+/* line 497, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+#panel-image-4 {
+  position: relative;
+  background: url("/images/projects/4.EdgarsZoo/1.jpg") no-repeat;
+  background-size: cover;
+  background-position: center; }
+
+/* line 503, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+#panel-image-5 {
+  position: relative;
+  background: url("/images/projects/5.Nudge/1.jpg") no-repeat;
+  background-size: cover;
+  background-position: center; }
+
+/* line 509, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+#panel-image-6 {
+  position: relative;
+  background: url("/images/projects/6.YankyPanky/1.jpg") no-repeat;
+  background-size: cover;
+  background-position: center; }
+
+/* line 515, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+#panel-image-7 {
+  position: relative;
+  background: url("/images/projects/7.Mixtable/1.jpg") no-repeat;
+  background-size: cover;
+  background-position: center; }
+
+/* line 521, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+#panel-image-8 {
+  position: relative;
+  background: url("/images/projects/8.DropboxQR/1.jpg") no-repeat;
+  background-size: cover;
+  background-position: center; }
+
+/* line 527, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+#panel-image-9 {
+  position: relative;
+  background: url("/images/projects/9.SplitTest/1.jpg") no-repeat;
+  background-size: cover;
+  background-position: center; }
+
+/* line 536, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+.tiles {
+  margin-right: 0px;
+  margin-left: 0px; }
+
+/* line 540, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+#projectMain {
+  padding: 10px 0; }
+
+/* line 543, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+.panel-image {
   margin-bottom: 10px; }
 
-/* line 326, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
-.sorry {
-  text-align: center;
+/* line 546, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+.panel-image-footer {
+  margin-bottom: 20px; }
+  /* line 548, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+  .panel-image-footer h2 {
+    padding-top: 2px;
+    margin-top: 0;
+    margin-bottom: 2px;
+    font-size: 17px;
+    font-weight: 700;
+    color: #333;
+    font-family: "Karla"; }
+  /* line 556, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+  .panel-image-footer p {
+    margin-bottom: 0;
+    font-size: 16px;
+    color: #848484; }
+  /* line 560, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+  .panel-image-footer h2, .panel-image-footer p {
+    display: inline; }
+
+@media screen and (min-width: 768px) {
+  /* line 564, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+  .panel-image-footer {
+    position: absolute;
+    top: 0;
+    right: 5px;
+    bottom: 0;
+    left: 5px;
+    display: block;
+    margin-bottom: 10px;
+    background: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    transition: 0.5s;
+    -webkit-backface-visibility: hidden; }
+    /* line 576, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+    .panel-image-footer .text-container {
+      position: absolute;
+      top: 220px;
+      left: 0;
+      width: 100%;
+      text-align: center;
+      -webkit-transform: translateZ(0); }
+      /* line 583, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+      .panel-image-footer .text-container h2, .panel-image-footer .text-container p {
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        -webkit-font-smoothing: subpixel-antialiased; }
+    /* line 587, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+    .panel-image-footer:hover {
+      opacity: 1; }
+      /* line 589, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+      .panel-image-footer:hover .text-container {
+        -webkit-animation: fadeInUp 0.4s;
+        animation: fadeInUp 0.4s; }
+    /* line 592, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+    .panel-image-footer h2, .panel-image-footer p {
+      color: #fff;
+      font-family: "Karla"; } }
+@media screen and (min-width: 1200px) {
+  /* line 597, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+  .panel-image-footer .text-container {
+    top: 250px; }
+
+  /* line 599, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+  .col-sm-4 .panel-image-footer .text-container {
+    top: 120px; } }
+@media screen and (min-width: 768px) {
+  /* line 604, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+  .col-sm-4 .panel-image-footer {
+    margin-bottom: 10px; }
+    /* line 606, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+    .col-sm-4 .panel-image-footer .text-container {
+      position: absolute;
+      top: 100px;
+      left: 0;
+      width: 100%;
+      text-align: center; } }
+/* line 620, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+#cvContainer {
+  padding: 5% 0; }
+  /* line 622, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+  #cvContainer h2 {
+    font-size: 27px; }
+
+/* line 624, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+#meCon {
+  padding-bottom: 25px; }
+
+/* line 626, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+#timeline {
+  padding-bottom: 3%; }
+
+/* line 632, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+#timeline img {
+  background-image: url("/images/TimelinePhone.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  min-height: 100%;
+  width: 100%;
+  height: 10px;
+  padding-top: 252.5%; }
+
+@media (min-width: 480px) and (max-width: 767px) {
+  /* line 646, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+  #timeline img {
+    background-image: url("/images/TimelinePhablet.svg");
+    padding-top: 183%; } }
+@media (min-width: 768px) and (max-width: 991px) {
+  /* line 653, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+  #timeline img {
+    background-image: url("/images/TimelineTablet.svg");
+    padding-top: 170%; } }
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* line 660, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+  #timeline img {
+    background-image: url("/images/TimelineLapt.svg");
+    padding-top: 50%; } }
+@media (min-width: 1200px) {
+  /* line 667, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+  #timeline img {
+    background-image: url("/images/TimelineDesk.svg");
+    padding-top: 48.7%; } }
+/* line 672, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+.subText {
+  margin: 30px 0;
+  display: inline-block; }
+
+/* line 677, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+#meConSet {
+  padding-right: 30px; }
+
+/* line 685, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+#skills img {
+  background-image: url("/images/SkillsMob.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  min-height: 100%;
+  width: 100%;
+  height: 10px;
+  padding-top: 252.5%; }
+
+@media (min-width: 768px) {
+  /* line 699, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+  #skills img {
+    background-image: url("/images/Skills.svg");
+    padding-top: 60.7%; } }
+@media (min-width: 992px) {
+  /* line 706, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+  #skills img {
+    padding-left: 30px;
+    margin-top: 20px; } }
+/* line 711, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+.about-intro {
+  font-size: 16px;
+  padding: 0 0 6% 0; }
+
+/* line 715, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+#cvDwn {
+  padding-top: 5%; }
+
+/* line 718, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+.dwnldCV {
+  margin-left: auto;
+  margin-right: auto;
+  display: table;
+  color: #868686;
+  border-radius: 25px; }
+  /* line 724, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+  .dwnldCV:hover {
+    color: #ffffff; }
+
+/* line 730, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+#mePic {
   position: relative;
-  top: 37%;
-  transform: translateY(-50%); }
+  background: url("/images/mePic.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  max-height: 350px;
+  overflow: hidden; }
 
-/* line 333, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
-.stickyFoot {
-  bottom: 78px;
-  position: fixed;
-  width: 98%; }
+/* line 738, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+#ldnPic {
+  position: relative;
+  background: url("/images/ldn.jpg") no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  max-height: 350px;
+  overflow: hidden; }
 
-@media (max-width: 400px) {
-  /* line 339, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
-  h1 {
-    font-size: 30px; } }
+/* line 746, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+.contactMe {
+  padding-top: 20px; }
+
+/* line 749, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
+input, textarea {
+  margin-bottom: 10px; }

@@ -1,31 +1,31 @@
 
 
-var menu = document.querySelector(".mainNav"),
-  toggle = document.querySelector(".nav-burger"),
-  body = document.getElementsByTagName('body')[0];
-
-function toggleToggle() {
-  toggle.classList.toggle("menu-open");
-};
-
-function toggleMenu() {
-  menu.classList.toggle("active");
-  body.classList.toggle("is-active-menu");
-};
-
-toggle.addEventListener("click", toggleToggle, false);
-toggle.addEventListener("click", toggleMenu, false);
-
-document.onkeydown = check_key;
-
-function check_key(e) {
-    e = e || window.event;
-    if(e.keyCode == '27') {      
-      toggleToggle();
-      toggleMenu();
-    }
-}
-
+//More text
 $(".expand-text").click(function() {
     $(this).children(".icon").toggleClass("rotate"), $(".expandable-text").slideToggle("fast")
 });
+
+
+
+
+//Hamburger
+(function() {
+
+  "use strict";
+
+  var toggles = document.querySelectorAll(".c-hamburger");
+
+  for (var i = toggles.length - 1; i >= 0; i--) {
+    var toggle = toggles[i];
+    toggleHandler(toggle);
+  };
+
+  function toggleHandler(toggle) {
+    toggle.addEventListener( "click", function(e) {
+      e.preventDefault();
+      (this.classList.contains("is-active") === true) ? this.classList.remove("is-active") : this.classList.add("is-active");
+    });
+  }
+
+})();
+
