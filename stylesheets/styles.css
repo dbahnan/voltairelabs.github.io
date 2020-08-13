@@ -1,3 +1,49 @@
+
+
+/*New CSS STARTS FROM HERE */
+html, body {
+	height: 100%;
+}
+
+.flexwindow{
+  background-color: white;
+  min-height: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.content{
+  justify-content: center;
+  align-self: center;
+  padding-left: 20%;
+  @media (min-width: 992px) {
+  	padding-left: none;
+  }
+}
+
+.content h3, h1, h5{
+  	margin: 5px 0px 0px 0px; 
+}
+
+a {
+	margin-top: 6px;
+	display: inline-block;
+}
+
+
+.colour {
+  background: -webkit-linear-gradient(180deg, #00d39b, #4cb9c5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+h1, h5 {
+	font-weight: bold;
+}
+
+/*New CSS ENDS HERE */
+
+
 @import url(https://fonts.googleapis.com/css?family=Karla:400,700|Cabin:600);
 /* line 7, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
 html, head, body {
@@ -7,16 +53,18 @@ html, head, body {
 body {
   background-image: linear-gradient(180deg, #00d39b, #4cb9c5);
   background-repeat: no-repeat;
-  padding: 5px;
+  padding: 13px;
   transition: padding 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55); }
   @media (min-width: 992px) {
     /* line 11, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
     body {
       padding: 10px; } }
 
+
+
 /* line 19, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
 .background {
-  background-color: white; }
+  background-color: black; }
 
 /* line 24, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
 hr {
@@ -892,3 +940,4 @@ footer {
 /* line 749, /Users/dylanbahnan/Dropbox/Working/3-Portfolio/sinan.github.io/source/stylesheets/styles.sass */
 input, textarea {
   margin-bottom: 10px; }
+
